@@ -38,45 +38,24 @@ specialattack = gladiatorer[gladiator_val]["specialattack"]
 motståndare = 20
 
 # Vapenval med specifika attacker och egenskaper
-vapen = {
-    "Gladius": {
-        "attacker": ["hugg", "parering", "stöt"],
-        "träffchanser": [0.7, 0.8, 0.55],  # Chans att träffa med respektive attack
-        "skador": [(1, 3), (1, 2), (2, 5)],  # Skadespann för varje attack
-        "beskrivning": "Ett snabbt och balanserat svärd."
-    },
-    "Trident": {
-        "attacker": ["stöt", "blockering", "slunga"],
-        "träffchanser": [0.7, 0.8, 0.45],
-        "skador": [(2, 4), (1, 2), (3, 6)], 
-        "beskrivning": "En kraftfull treudd med hög skada men låg träffchans."
-    },
-    "Spear": {
-        "attacker": ["stick", "kasta", "skydda"],
-        "träffchanser": [0.6, 0.45, 0.7],
-        "skador": [(1, 4), (3, 5), (1, 2)],
-        "beskrivning": "Ett långt spjut med räckvidd och skada."
-    }
-}
-
 if gladiator_val == "Murmillo":
     print("Du valde gladiatorn Murmillo och har därför en extra attack där du kan kasta din sköld. \n")
     vapen = {
     "Gladius": {
         "attacker": ["hugg", "parering", "stöt", "skölda"],
-        "träffchanser": [1, 0.8, 0.55, 0.80],  # Chans att träffa med respektive attack
+        "träffchanser": [1, 0.7, 0.55, 0.60],  # Chans att träffa med respektive attack
         "skador": [(1, 3), (1, 2), (2, 5), (3,4)],  # Skadespann för varje attack
         "beskrivning": "Ett snabbt och balanserat svärd."
     },
     "Trident": {
         "attacker": ["stöt", "blockering", "slunga", "skölda"],
-        "träffchanser": [0.7, 0.8, 0.45, 0.8],
+        "träffchanser": [0.6, 0.8, 0.35, 0.7],
         "skador": [(2, 4), (1, 2), (3, 6), (3, 4)], 
         "beskrivning": "En kraftfull treudd med hög skada men låg träffchans."
     },
     "Thraex": {
         "attacker": ["stick", "kasta", "skydda","skölda"],
-        "träffchanser": [0.6, 0.45, 0.7, 0.8],
+        "träffchanser": [0.5, 0.37, 0.7, 0.65],
         "skador": [(1, 4), (3, 5), (1, 2), (3,4)],
         "beskrivning": "Ett långt spjut med räckvidd och skada."
     }
@@ -87,20 +66,20 @@ if gladiator_val == "Retiarius":
     vapen = {
     "Gladius": {
         "attacker": ["hugg", "parering", "stöt", "nät"],
-        "träffchanser": [0.7, 0.8, 0.55, 0.13],  # Chans att träffa med respektive attack
-        "skador": [(1, 3), (1, 2), (2, 5), (1,10)],  # Skadespann för varje attack
+        "träffchanser": [0.8, 0.9, 0.69, 0.23],  # Chans att träffa med respektive attack
+        "skador": [(1, 3), (1, 2), (2, 5), (8,10)],  # Skadespann för varje attack
         "beskrivning": "Ett snabbt och balanserat svärd."
     },
     "Trident": {
         "attacker": ["stöt", "blockering", "slunga", "nät"],
-        "träffchanser": [0.7, 0.8, 0.45, 0.13],
-        "skador": [(2, 4), (1, 2), (3, 6), (1, 10)], 
+        "träffchanser": [0.7, 0.8, 0.65, 0.23],
+        "skador": [(2, 4), (1, 2), (3, 6), (8, 10)], 
         "beskrivning": "En kraftfull treudd med hög skada men låg träffchans."
     },
     "Spear": {
         "attacker": ["stick", "kasta", "skydda", "nät"],
-        "träffchanser": [0.6, 0.45, 0.7, 0.13],
-        "skador": [(1, 4), (3, 5), (1, 2), (1,10)],
+        "träffchanser": [0.70, 0.55, 0.8, 0.23],
+        "skador": [(1, 4), (3, 5), (1, 2), (8,10)],
         "beskrivning": "Ett långt spjut med räckvidd och skada."
     }
 }
