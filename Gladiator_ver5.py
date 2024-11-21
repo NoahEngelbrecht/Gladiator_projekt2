@@ -62,7 +62,7 @@ if gladiator_val == "Murmillo":
 }
 
 if gladiator_val == "Retiarius":
-    print("Du valde gladiatorn Murmillo och har därför en extra attack där du kan kasta din sköld. \n")
+    print("Du valde gladiatorn Retiarius och har därför en extra attack där du kan kasta ett nät. \n")
     vapen = {
     "Gladius": {
         "attacker": ["hugg", "parering", "stöt", "nät"],
@@ -84,8 +84,8 @@ if gladiator_val == "Retiarius":
     }
 }
 
-if gladiator_val == "Murmillo":
-    print("Du valde gladiatorn Murmillo och har därför en extra attack där du kan kasta din sköld. \n")
+if gladiator_val == "Thraex":
+    print("Du valde gladiatorn Thraex och har därför en extra attack där du kan göra ett snabbt hugg. \n")
     vapen = {
     "Gladius": {
         "attacker": ["hugg", "parering", "stöt"],
